@@ -1,0 +1,14 @@
+* DDD - Domain Driven Design *
+	O DDD consiste em quebrar a aplicação e organizá-la por módulos dirigidos às suas respectivas responsabilidades SOMENTE NO BACKEND, dividindo os services, models, repos, etc. Importante aplicar o que faz sentido ao projeto. Pode ser usado com o TDD (Test Driven Development)
+	Pode-se criar uma pasta shared no mesmo nível dos modules que contém o que é compartilhado entre os modules, como database, middlewares e errors.
+	Camada de infra = decisões técnicas da aplicação. Depende de arquitetura escolhida, bibliotecas, entre outras coisas. Não precisa ser compreensível pelo grande público. Coloca coisas que um dia podem mudar. Ex: a database está ligada á decisão técnica de usar o type-orm ou seja, é infra, já os errors são completamente independentes de bibliotecas, sendo parte única e exclusivamente do domínio.
+	Camada de domínio = estrutura fácil de perceber da aplicação. Regras de negócio.
+	
+	A estrutura fica uma pasta src que tem types, config, modules e shared. Shared é o que toda a aplicação compartilha (db (infra), erros, o server(infra), etc), já modules tem cada módulo da aplicação, com seus respectivos services e models (infra), além dos respositórios (se necessário).
+	
+	SOLID
+	
+	S - single responsability principle => simples, significa que cada classe deve ter só uma responsabilidade, ou só uma regra de negócio.
+	0 - Open/Closed principle => as entidades do software podem ser extendidas, mas não podem ser modificadas.
+	L - Liskov Substitution Principle => TUdo que depende de uma tech específica deve ser movido de lugar para que fique em uma parte dessa tech, mas que se ela for subtituída possa funcionar do mesmo jeito. Um genérico + um pra tech, sendo o genérico uma interface caso TS.
+
