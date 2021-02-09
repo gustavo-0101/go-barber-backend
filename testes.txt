@@ -1,0 +1,27 @@
+# Testes automatizados parcero
+
+Quanto mais funcionalidades, mais difícil fica de testar. Por isso testes são importantes.
+
+# São três
+
+# 1. Testes unitários (TDD mainly, na camada de serviço)
+
+Testam funcionalidades específicas da nossa aplicação (FUNÇÕES PURAS).
+Não chama API nem efeito colateral, é fechada no código pra uma coisinha só, bem ali.
+
+# 2. Testes de integração (Prova real da aplicação)
+
+Testam toda uma funcionalidade, passando por várias camadas da aplicação.
+Ex. => Adicionar usuário ===> Routes -> Controller -> Service -> Repositório...
+
+# 3. Testes E2E
+
+Testa a aplicação toda, com todas as funcionalidades, como se o usuário mexesse em tudo (não rola no back-end é O TESTE de front end)
+Ex:
+
+1. Clique no input email
+2. Preencha com o email
+3. Clique no input senha
+4. Preencha com a senha
+5. Clique no LOGIN
+6. Envie para o dash, ou trate os erros

@@ -1,0 +1,7 @@
+# TDD - Test Driven Development
+
+Crias os testes antes das funcionalidades, para ter uma bússola de desenvolvimento.
+
+ex.: Quando se cadastrar disparar Welcome Email. -> estrutura no teste, taca no app e testa.
+
+Ferramenta pra testes = JEST
