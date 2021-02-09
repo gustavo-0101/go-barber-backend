@@ -25,3 +25,7 @@ Ex:
 4. Preencha com a senha
 5. Clique no LOGIN
 6. Envie para o dash, ou trate os erros
+
+O legal dos testes unitários é que é possível usar um fake repo, e testar sem tocar no banco, pra não ser passível de erro no outro lado.
+Como eles não devem depender de nada, além da própria aplicação, nas faz sentido depender de um repositório no banco.
+Um fake é só um array local mesmo.
