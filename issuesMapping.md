@@ -3,31 +3,31 @@
 **RF** => Requisitos funcionais (funcionalidades)
 
 <!-- -   O usuário deve poder recuperar sua senha informando o email; -->
--   O usuário deve receber um email com instruções de recuperação de senha;
+<!-- -   O usuário deve receber um email com instruções de recuperação de senha; -->
 <!-- -   O usuário deve poder resetar sua senha; -->
 
 **RNF** => Requisitos não funcionais (libs e tal)
 
--   Utilizar Mailtrap pra testar envios em dev;
+<!-- -   Utilizar Mailtrap pra testar envios em dev; -->
 -   Utilizar Amazon SES para envios em produção;
--   O envio de e-mail deve acontecer em segundo plano (bg job);
+<!-- -   O envio de e-mail deve acontecer em segundo plano (bg job); -->
 
 **RN** => Regras de negócio (autoexplicativo)
 
--   O link enviado por email para resetar senha deve expirar em 2h;
--   O usuário precisa confirmar a nova senha ao resetá-la;
+<!-- -   O link enviado por email para resetar senha deve expirar em 2h; -->
+<!-- -   O usuário precisa confirmar a nova senha ao resetá-la; -->
 
 # Atualização do perfil
 
 **RF** => Requisitos funcionais (funcionalidades)
 
--   O usuário deve poder atualizar seu perfil (nome, email, senha);
+<!-- -   O usuário deve poder atualizar seu perfil (nome, email, senha);  -->
 
 **RN** => Regras de negócio (autoexplicativo)
 
--   O usuário não pode atualizar seu email para um email já utilizado;
--   Para atualizar sua senha o usuário deve informar a senha atual;
--   Para atualizar sua senha o usuário precisa confirmá-la;;
+<!-- -   O usuário não pode atualizar seu email para um email já utilizado; -->
+<!-- -   Para atualizar sua senha o usuário deve informar a senha atual; -->
+<!-- -   Para atualizar sua senha o usuário precisa confirmá-la;; -->
 
 # Painel do prestador
 
